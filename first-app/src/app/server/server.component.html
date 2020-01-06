@@ -1,0 +1,23 @@
+<p
+  [ngStyle]="{backgroundColor: getColor()}"
+  [ngClass]="{online: serverStatus === 'online'}">
+  {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}
+</p>
+
+<p></p>
+
+<!--
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName">
+<p></p>
+
+<p> {{ userName }}</p>
+<p></p>
+
+<button
+  class="btn btn-primary"
+  [disabled]="isUserNameEmpty()"
+  (click)="resetUserName()">Reset username</button>
+-->
